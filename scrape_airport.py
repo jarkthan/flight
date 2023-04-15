@@ -5,7 +5,7 @@ from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 url = 'https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat'
 
 # Load the data into a Pandas dataframe
-df = pd.read_csv(url, header=None, names=['AirlineID', 'Name', 'Alias', 'IATA', 'ICAO', 'Callsign', 'Country', 'Active'])
+df = pd.read_csv(url, header=None, names=['AirportID', 'Name', 'City', 'Country', 'IATA', 'ICAO', 'Latitude', 'Longitude', 'Altitude', 'Timezone', 'DST', 'Tz database time zone', 'Type', 'Source'])
 
 # Define the connection string and blob information
 connectionString = 'DefaultEndpointsProtocol=https;AccountName=dwthanakornrung;AccountKey=k3+ju9o06l6FeVP722RJdumOGmS4Bxha4XNKucGxcZjhtyxh4AUGY/J2zenszJZknVprkqI5lmAO+ASt2uh9qQ==;EndpointSuffix=core.windows.net'

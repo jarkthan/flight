@@ -5,7 +5,7 @@ from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 url = 'https://raw.githubusercontent.com/jpatokal/openflights/master/data/countries.dat'
 
 # Load the data into a Pandas dataframe
-df = pd.read_csv(url, header=None, names=['Name', 'ISO', 'DST', 'Tz'])
+df = pd.read_csv(url, header=None, names=['Name', 'ISO', 'DAFIF'])
 
 # Define the connection string and blob information
 connectionString = 'DefaultEndpointsProtocol=https;AccountName=dwthanakornrung;AccountKey=k3+ju9o06l6FeVP722RJdumOGmS4Bxha4XNKucGxcZjhtyxh4AUGY/J2zenszJZknVprkqI5lmAO+ASt2uh9qQ==;EndpointSuffix=core.windows.net'
